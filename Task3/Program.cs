@@ -4,19 +4,17 @@
 
 Console.Clear();
 
-void Tablesquare(string str)
+double Tablesquare(double number)
 {
-    Console.WriteLine(str);
-    double number = int.Parse(Console.ReadLine());
-    double count = 1;
-    while ( count <= number)
-    {
-        double pow = Math.Pow(number, 3);
-        Console.Write(pow + " ");
-        count ++;
-    
-    }
-        Console.WriteLine();
+    double res = Math.Pow(number, 3);
+    return res;
 }
-
-Tablesquare("Write number N : ");
+Console.WriteLine("Write number N : ");
+double number = double.Parse(Console.ReadLine());
+double count = 1;
+  while ( count <= number)
+  {
+    double result = Tablesquare(count);
+    count++;
+    Console.WriteLine(result);
+  }

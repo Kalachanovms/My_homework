@@ -14,7 +14,7 @@ Array.Reverse(revnumber);
 string ? finalnumer = new string(revnumber);
 
 int numberA = Convert.ToInt32(number);
-int numberB = Convert.ToInt32(revnumber);
+int numberB = Convert.ToInt32(finalnumer);
 
     if(numberA == numberB)
     {
