@@ -8,10 +8,26 @@
 
 Console.Clear();
 
-int DataInput(string str)
+int WriteNumber(string str)
 {
-    Console.Write(str);
+    Console.WriteLine(str);
     int number = int.Parse(Console.ReadLine());
     return number;
-
 }
+int SumNumber( int number)
+{
+
+    int sum = 0;
+
+    for (sum = 0; number != 0; number = number / 10)
+    {
+        int count = number % 10;
+        sum = sum + count;
+    }
+    return sum;
+}
+
+int result = WriteNumber("Write Number");
+int sum = SumNumber(result);
+
+Console.WriteLine("Sum numbers = " + sum);
